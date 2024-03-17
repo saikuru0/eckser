@@ -31,8 +31,7 @@ def scrape_tweet(url: str) -> list:
 					media_urls.append(item['media_url_https'])
 		return media_urls
 
-if __name__ == "__main__":
-	
+def main():
 	video_formats = (".mp4", ".avi", ".mov", ".wmv", ".flv", ".mkv", ".webm")
 	image_formats = (".jpg", ".jpeg", ".png", ".webp")
 
@@ -51,3 +50,6 @@ if __name__ == "__main__":
 	
 	for final_url in final_urls:
 		print(final_url)
+
+if __name__ == "__main__":
+	main()	
